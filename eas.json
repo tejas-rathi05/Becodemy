@@ -1,0 +1,31 @@
+{
+  "cli": {
+    "version": ">= 12.6.2",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m-medium"
+      }
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_IOS_GOOGLE_API_KEY": "",
+        "EXPO_PUBLIC_SERVER_URI": "http://192.168.0.101:8000",
+        "EXPO_PUBLIC_JWT_SECRET_KEY": "379ebfec5f790a794aad5e41a341f7bfff77848c6782213045ad88dc13519cc896ac317eaa4848355eba6e4421908612867e69c371d734f6dd01b55e6204f31d",
+        "EXPO_PUBLIC_GITHUB_CLIENT_ID": "65e9efd1c4e01842c5e9",
+        "EXPO_PUBLIC_GITHUB_CLIENT_SECRET": "20e5d7f6ee2129b37b17c98e84da90d08cc96e4a"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
